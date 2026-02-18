@@ -1,0 +1,26 @@
+# 🍴 Django QR Code Menu Generator for Restaurants
+
+---
+
+This is a Django-based web tool that helps restaurants create digital menus by generating unique QR codes. Instead of physical menus, customers can scan the QR code to view the menu on their phones.
+
+---
+
+## 🚀 Features
+- **Easy QR Generation:** Just enter the restaurant name and the menu URL.
+- **Dynamic File Naming:** Automatically generates unique filenames for each restaurant.
+- **Downloadable QR:** Provides a direct download button for the generated QR image.
+- **Clean UI:** Built with Bootstrap for a responsive and simple user interface.
+
+---
+
+## 🛠️ Tech Stack
+- **Backend:** Python, Django
+- **Libraries:** `qrcode`, `Pillow` (for image processing)
+- **Frontend:** HTML, Bootstrap (CDN)
+- 
+---
+## 📋 Prerequisites
+Make sure you have Python installed. You will also need to install the following packages:
+```bash
+pip install django qrcode pillow
