@@ -6,9 +6,6 @@ This is a Django-based web tool that helps restaurants create digital menus by g
 
 ---
 
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ### 🚀 Overview
 **QR-Menu-Master** is a smart utility tool designed for the hospitality industry. It bridges the gap between physical dining and digital convenience by generating unique, downloadable QR codes for restaurant menus.
