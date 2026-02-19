@@ -25,6 +25,8 @@ This is a Django-based web tool that helps restaurants create digital menus by g
 ### QR Dashboard
 ![QR Page Dashboard](https://github.com/sajjadali-fullstack/django-qr-restaurant-menu/blob/d118e0ef193595b3495066acdbddfe6522d09a70/resturantlnameurl.png)
 
+### Generate QR Code 
+![QR Code Generate ](https://github.com/sajjadali-fullstack/django-qr-restaurant-menu/blob/9314b694789105b55698167a833927c541bc7595/resturantQr.png)
 
 ---
 
