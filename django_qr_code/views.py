@@ -5,9 +5,7 @@ import os
 from django.conf import settings
 
 
-
-
-
+# 1. Generate QR Code
 def generate_qr_code(request):
     if request.method == 'POST':  # True
         form = QRCodeForm(request.POST)
@@ -25,13 +23,21 @@ def generate_qr_code(request):
             file_name = resturant_name.replace(" ", "_").lower() + "_menu.png"  # replace all the spaces into underscores
             file_path = os.path.join(settings.MEDIA_ROOT, file_name)  # media/sajjad_ali_resturant_menu.png
             qr.save(file_path)
+
+            # Testing purpose
+            print("File Path =====>", file_path)
+            qr_url = os.path.join(settings.MEDIA_URL, file_name)
+            print("Media URL =====>", qr_url)
+            
             # qr.save(f' Menu {resturant_name}.png')
             context = {
-                'resturant_name':resturant_name
+                'resturant_name':resturant_name,
+                'qr_url':qr_url,  # For Display QR Image
+                'file_name':file_name,
                 }
             return render(request, 'qr_result.html', context)
 
-    else:
+    else:  #False
         form = QRCodeForm()
         return render(request, 'generate_qr_code.html', {'form':form})
 
